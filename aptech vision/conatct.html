@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="Images/fave_icon.png" type="image/x-icon">
+    <!-- html links -->
+    <!-- <link rel="stylesheet" href="index2.html"> -->
+
+    <!-- Scroll cdn  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+
+    <!-- css link files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/easy.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- font awesome link/cdn for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div class="site-wrapper">
+        <div class="header-index">
+            <!-- header section 1.1 -->
+            <header>
+                <div class="container navbar">
+                    <div class="container-nav flex">
+                        <!-- site logo -->
+                        <a href="" class="navbar-logo"><img src="Images/logo.png" alt=""></a>
+                        <button onclick="openNav()" class="navbar-toggler" type="button">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                        <!-- menu -->
+                        <ul class="navbar-nav flex">
+                            <li><a href="" class="nav-link active">Home</a></li>
+                            <li><a href="#about-us" class="nav-link">About</a></li>
+                            <li><a href="" class="nav-link">Contact Us</a></li>
+                            <li class="dropdown">
+                                <a href="" class="nav-link dropdown-toggle">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="" class="dropdown-items">Services</a></li>
+                                    <li><a href="" class="dropdown-items">Pricing Plan</a></li>
+                                    <li><a href="" class="dropdown-items">Protfolio</a></li>
+                                    <li><a href="" class="dropdown-items">Team</a></li>
+                                    <li><a href="" class="dropdown-items">Testimonials</a></li>
+                                    <li><a href="" class="dropdown-items">FAQ</a></li>
+                                    <li><a href="" class="dropdown-items">Blog</a></li>
+                                    <li><a href="" class="dropdown-items">Coming Soon</a></li>
+                                    <li><a href="" class="dropdown-items">404</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-right flex">
+                        <p>Call Us: <span>+123 456 7890</span></p>
+                        <!-- header buttons -->
+                        <i onclick="open_search()" class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <!-- side bar -->
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href=""><img src="Images/logo.png" alt="logo"></a>
+                        <button onclick="closeNav()" type="button" class="closebtn btn_hover1">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div>
+                    <div>
+                        <!-- side menus -->
+                        <ul>
+                            <li><a href="" class="nav-link active">Home</a></li>
+                            <li><a href="#about-us" class="nav-link">About</a></li>
+                            <li><a href="" class="nav-link">Contact</a></li>
+                            <li class="pages"><a href="">More</a></li>
+                            <li class="collapse-btn">
+                                <a href="" class="nav-link plus_collapse" data-bs-toggle="collapse">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+
+                                <div class="collapse" id="pages">
+                                    <ul>
+                                        <li><a href="" class="nav-link">Services</a></li>
+                                        <li><a href="" class="nav-link">Pricing Plan</a></li>
+                                        <li><a href="" class="nav-link">Protfolio</a></li>
+                                        <li><a href="" class="nav-link">Test</a></li>
+                                        <li><a href="" class="nav-link">Testimonials</a></li>
+                                        <li><a href="" class="nav-link">FAQ</a></li>
+                                        <li><a href="" class="nav-link">Blog</a></li>
+                                        <li><a href="" class="nav-link">Coming Soon</a></li>
+                                        <li><a href="" class="nav-link">404</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!-- seacrh bar -->
+
+                <div id="search-bar">
+                    <div onclick="close_search()" class="btn_hover1">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <form action="#" method="search">
+                        <input type="search" required placeholder="search...">
+                        <button type="submit" class="btn_hover1">submit</button>
+                    </form>
+                </div>
+                <!-- right sidebar -->
+                <section class="header-right-sidebar" id="right_side">
+                    <div class="flex flex-sb">
+                        <a href=""><img src="Images/right-side-logo.png" alt="logo"></a>
+                        <button class="close_rightsidebar fa-solid fa-xmark"></button>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing impedit a rerum adipisci quaerat soluta ex.
+                        Tenetur, illo!</p>
+                    <a href="" class="btn_hover1">Discover More</a>
+                    <hr>
+                    <h4> Connected details</h4>
+                    <ul class="flex">
+                        <li>
+                            <a href=""><i class="fa-solid fa-phone"></i></a>
+                            <a href="" class="text-lowercase">bilal.mustafafaisal@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-envelope"></i></a>
+                            <a href="">+92 3152821296</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-regular fa-clock"></i></a>
+                            <a href="">Office hours: 12am - 9pm</a>
+                        </li>
+                    </ul>
+                    <span class="flex">
+                        <a href="" class="fa-brands fa-facebook"></a>
+                        <a href="" class="fa-brands fa-instagram"></a>
+                        <a href="" class="fa-brands fa-twitter"></a>
+                        <a href="" class="fa-brands fa-linkedin"></a>
+                    </span>
+
+                </section>
+            </header>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-hr flex flex-col">
+                <div class="flex gap-1">
+                    <hr>
+                    <h6>Newsletter</h6>
+                </div>
+                <h3>JOIN OUR MAILING LIST</h3>
+                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, similique
+                    officiis! Veritatis est alias vitae.</p>
+            </div>
+            <form action="#" id="footer-form" class="flex flex-sb gap-2">
+                <div id="footer-messege"></div>
+                <input type="email" required placeholder="Enter your E-mail">
+                <button type="submit" class="btn_hover1">Get Started</button>
+            </form>
+        </div>
+        <div class="footer-menu">
+            <div class="container">
+                <div class="flex flex-start footer-center">
+                    <div class="w-33 flex flex-col gap-2 flex-start">
+                        <a href="/"><img src="Images/logo.png" alt="footer-logo"></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam, modi doloribus
+                            recusandae excepturi solusciunt natus blanditiis! Labore, voluptas?</p>
+                        <span class="flex gap-20">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </span>
+                    </div>
+                    <div class="w-16 mt-1">
+                        <h4>Quick Links</h4>
+                        <ul class="flex flex-col gap-20 flex-start">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-16 mt-4 flex-end">
+                        <ul class="flex flex-col gap-2 flex-start">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-33 mt-1 flex flex-col flex-start">
+                        <h4>Get Connected</h4>
+                        <ul class="flex flex-col gap-2 flex-start">
+                            <li>
+                                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                                <a href="#" class="text-lowercase">Bilal.mustafaff@gmail.com</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="#">+123-555-444</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-sharp fa-regular fa-clock"></i></a>
+                                <a href="#">Office Hours: 8AM - 11PM Sunday - Weekend Day</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container flex flex-sb gap-20 flex-wrap">
+                <h6>Copyright &copy: 2024 Coded By <a href="/" class="p-0">Bilal Mustafa</a></h6>
+                <h6>Powered By<b>Bilal Mustafa</b></h6>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
